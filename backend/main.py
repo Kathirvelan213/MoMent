@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.api import api_router
+from api.api import api_router,ws_router
 
 app = FastAPI(
     title="AI Meeting Assistant API",
@@ -8,6 +8,7 @@ app = FastAPI(
 )
 
 app.include_router(api_router)
+app.include_router(ws_router)
 
 
 @app.get("/")
