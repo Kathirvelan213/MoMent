@@ -10,7 +10,6 @@ app = FastAPI(
 app.include_router(api_router)
 app.include_router(ws_router)
 
-
 @app.get("/")
 def root():
     return {"message": "AI Meeting Assistant API is running"}
