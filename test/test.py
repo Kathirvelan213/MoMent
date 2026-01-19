@@ -5,7 +5,7 @@ import soundfile as sf
 import librosa
 import time
 
-WS_URL = "ws://localhost:8000/ws/audio"
+WS_URL = "ws://localhost:8000/ws/audio?meeting_id=test-meeting-1"
 AUDIO_FILE = "test/sample.mp3"
 
 TARGET_SR = 16000
